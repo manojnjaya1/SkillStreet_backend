@@ -1,5 +1,12 @@
 # SkillStreet_Backend_Assessment
 
+
+## Prerequisites
+
+Before running the application, make sure you have the following installed:
+
+- Node
+  
 ## To run this application in your local machine
 
  1) Clone this repository into yyour system
@@ -18,17 +25,17 @@
    USER AUTH API's
 
 1) REGISTER USER
-   POST    "/api/user/register"
-   request format : {"username":"your user name","email":"your emal","password":"your password"}    
-   response format: If any error in the request returns Http status code 400 with the error message.
-   If Success returns Http status code 201 and the created User.
+   POST    "/api/user/register"  
+   **request format** : {"username":"your user name","email":"your emal","password":"your password"}    
+   **response format**: If any error in the request returns Http status code 400 with the error message.  
+                    If Success returns Http status code 201 and the created User.
 
 
 2) LOGIN USER
-   POST    "/api/user/login"
-   request format : {"email":"your emal","password":"your password"}    
-   response format: If any error in the request returns Http status code 400 with the error message.
-   If Success returns Http status code 200 and the jwt token and the expiry time.
+   POST    "/api/user/login"  
+   **request format** : {"email":"your emal","password":"your password"}    
+   **response format**: If any error in the request returns Http status code 400 with the error message.  
+                    If Success returns Http status code 200 and the jwt token and the expiry time.
 
 
 
@@ -38,28 +45,36 @@
 
 
 3) ADD NOTE
-   POST    "/api/notes/add-notes"
-   request format : {"title":"title of you note","content":"content of your note"}    
-   response format: If any error in the request returns Http status code 400 with the error message.
-   If Success returns Http status code 201 and the created Note.   
+   POST    "/api/notes/add-notes"  
+  **request format** : {"title":"title of you note","content":"content of your note"}    
+   **response format**: If any error in the request returns Http status code 400 with the error message.  
+                    If Success returns Http status code 201 and the created Note.   
 
 4) GET NOTE
-   GET    "/api/notes/get-notes"
-   response format: If any error in the request returns Http status code 404 with the error message.
-   If Success returns Http status code 200 and all the Notes of th user.     
+   GET    "/api/notes/get-notes"  
+   **response format**: If any error in the request returns Http status code 404 with the error message.  
+                    If Success returns Http status code 200 and all the Notes of th user.     
 
 5) GET NOTE BY ID
    GET     "/api/notes/get-notes/id of your note"   
-   response format: If any error in the request returns Http status code 404 with the error message.
-   If Success returns Http status code 200 and the Note.     
+   **response format**: If any error in the request returns Http status code 404 with the error message.  
+                    If Success returns Http status code 200 and the Note.     
 
 6) UPDATE  NOTE
-   PUT    "/api/notes/add-notes/id of the note you want to update"
-   request format : {"title":"updated title of you note","content":"updated content of your note"}    
-   response format: If any error in the request returns Http status code 404 with the error message.
-   If Success returns Http status code 201 and the updated Note.  
+   PUT    "/api/notes/add-notes/id of the note you want to update"  
+   **request format** : {"title":"updated title of you note","content":"updated content of your note"}    
+   **response format**: If any error in the request returns Http status code 404 with the error message.  
+                    If Success returns Http status code 201 and the updated Note.  
 
 7) DELETE NOTE
-   DELETE    "/api/notes/get-notes/id of the note you want to delete"
-   response format: If any error in the request returns Http status code 404 with the error message.
-   If Success returns Http status code 200 and the success message.
+   DELETE    "/api/notes/get-notes/id of the note you want to delete"    
+   **response format**: If any error in the request returns Http status code 404 with the error message.    
+                    If Success returns Http status code 200 and the success message.
+
+
+## Error Handling
+
+The application handles errors and returns appropriate HTTP status codes in case of invalid requests or other errors.
+
+ ## Author 
+Manoj A N
